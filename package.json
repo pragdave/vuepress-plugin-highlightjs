@@ -1,0 +1,42 @@
+{
+  "name": "vuepress-plugin-highlightjs",
+  "version": "1.0.0",
+  "description": "VuePress plugin - highlightjs",
+  "keywords": [
+    "vuepress-plugin",
+    "vuepress",
+    "plugin",
+    "highlightjs",
+    "highlight"
+  ],
+  "homepage": "https://github.com/pragdave/vuepress-plugin-highlightjs",
+  "bugs": {
+    "url": "https://github.com/pragdave/vuepress-plugin-highlightjs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuepress/vuepress-next.git"
+  },
+  "license": "MIT",
+  "author": "pragdave",
+  "main": "lib/node/index.js",
+  "types": "lib/node/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc -b tsconfig.build.json",
+    "clean": "rimraf lib *.tsbuildinfo"
+  },
+  "dependencies": {
+    "@vuepress/core": "2.0.0-beta.35",
+    "highlight.js": "11.4.0",
+    "typescript": "^4.5.5"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
